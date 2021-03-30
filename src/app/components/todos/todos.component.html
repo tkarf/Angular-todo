@@ -1,0 +1,12 @@
+<div class="todos">
+    <!-- *ngFor är som att mappa igenom något i React -->
+    <div  *ngFor="let todo of todos; let i = index;" class="todo {{(todo.completed ? 'done' : '')}}">
+        <div class="id">
+            {{i}}
+        </div>
+        <div class="content">
+            {{todo.content}}
+        </div>
+        <button class="delete">Remove</button>          
+    </div>
+</div>
